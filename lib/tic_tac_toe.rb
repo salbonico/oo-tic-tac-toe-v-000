@@ -71,7 +71,6 @@ def turn_count
   WIN_COMBINATIONS.each do |combo|
   tempx = combo.all? do |number|
   @board[number] == "X"
-
   end
 
 
