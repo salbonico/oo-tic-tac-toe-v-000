@@ -29,16 +29,15 @@ index = input.to_i
 end
 
 def move(xo)
-
 @board[@index] = xo
-
 display_board
-
-
-
 end
 
+def position_taken?
 
+!(@board[@index].nil? || @board[@index] == " ")
+
+end
 
 
 
