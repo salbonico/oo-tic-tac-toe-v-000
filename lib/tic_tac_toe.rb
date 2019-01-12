@@ -124,6 +124,7 @@ def turn_count
   end
 
   def play
+  self.display_board
   until self.over? == true
     self.turn
     end
