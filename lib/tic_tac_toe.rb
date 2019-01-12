@@ -19,8 +19,8 @@ index = input.to_i
 @index = index - 1
 end
 
-def move(xo)
-@board[@index] = xo
+def move
+@board[@index] = @xo
 display_board
 end
 
@@ -42,22 +42,14 @@ end
 def turn
 
 puts "Please enter 1-9:"
-
 input = gets.strip
 input_to_index(input)
-
 current_player
 
 if valid_move? == true
-
-move(xo)
-
-
-
-else turn(board)
-
+move
+else turn
 end
-
 end
 
 
