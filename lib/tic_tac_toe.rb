@@ -28,4 +28,18 @@ index = input.to_i
 
 end
 
+def move(xo)
+
+@board[@index] = xo
+
+display_board
+
+
+
+end
+
+
+
+
+
 end
