@@ -108,19 +108,12 @@ def turn_count
 
   def winner
   WIN_COMBINATIONS.each do |combo|
-  tempx = combo.all? do |number|
+  @tempx = combo.all? do |number|
   @board[number] == "X"
   end
-  tempo = combo.all? do |number|
+  @tempo = combo.all? do |number|
   @board[number] == "O"
   end
-  if tempx == true
-  return "X"
-  elsif tempo == true
-  return "O"
-  end
-  end
-  return nil
   end
 
   def play
