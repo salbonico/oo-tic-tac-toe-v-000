@@ -21,7 +21,7 @@ end
 
 def move
 @board[@index] = @xo
-display_board
+self.display_board
 end
 
 def position_taken?
@@ -41,12 +41,12 @@ end
 def turn
 puts "Please enter 1-9:"
 input = gets.strip
-input_to_index(input)
-current_player
+self.input_to_index(input)
+self.current_player
 
 if valid_move? == true
-move
-else turn
+self.move
+else self.turn
 end
 end
 
@@ -60,7 +60,7 @@ def turn_count
   end
 
   def current_player
-    turn_count
+    self.turn_count
     if @count % 2 == 0
       @xo = "X"
     else @xo = "O"
@@ -92,7 +92,7 @@ def turn_count
   end
 
   def draw?
-  if full? == true && won? == false
+  if self.full? == true && self.won? == false
   return true
   else
   return false
@@ -100,7 +100,7 @@ def turn_count
   end
 
   def over?
-  if draw? == true || won? == true
+  if self.draw? == true || self.won? == true
   return true
   else return false
   end
@@ -124,13 +124,13 @@ def turn_count
   end
 
   def play
-  until over?
-    turn
+  until self.over? == true
+    self.turn
     end
-    if won? == true
+    if self.won? == true
       gwinner = winner
       puts "Congratulations #{gwinner}!"
-    elsif draw? == true
+    elsif self.draw? == true
       puts "Cat's Game!"
   end
   end
