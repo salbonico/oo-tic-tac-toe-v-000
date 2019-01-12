@@ -128,9 +128,9 @@ def turn_count
     turn
     end
     if won?(board) == true
-      winner = winner(board)
-      puts "Congratulations #{winner}!"
-    elsif draw?(board) == true
+      gwinner = winner
+      puts "Congratulations #{gwinner}!"
+    elsif draw? == true
       puts "Cat's Game!"
   end
   end
