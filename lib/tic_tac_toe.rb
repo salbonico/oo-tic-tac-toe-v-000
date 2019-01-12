@@ -72,7 +72,15 @@ def turn_count
   tempx = combo.all? do |number|
   @board[number] == "X"
   end
-
+  tempo = combo.all? do |number|
+  @board[number] == "O"
+  end
+  if tempx == true || tempo == true
+  return true
+  end
+  end
+  return false
+  end
 
 
 
