@@ -67,4 +67,15 @@ def turn_count
     end
   end
 
+  def won?
+  WIN_COMBINATIONS.each do |combo|
+  tempx = combo.all? do |number|
+  @board[number] == "X"
+
+  end
+
+
+
+
+
 end
