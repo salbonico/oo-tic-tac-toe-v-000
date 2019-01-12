@@ -34,9 +34,7 @@ display_board
 end
 
 def position_taken?
-
 !(@board[@index].nil? || @board[@index] == " ")
-
 end
 
 
