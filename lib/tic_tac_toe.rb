@@ -29,7 +29,6 @@ def position_taken?
 end
 
 def valid_move?
-
 if @index <0 || @index >8
 return false
 elsif
