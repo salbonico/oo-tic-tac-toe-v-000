@@ -46,7 +46,7 @@ puts "Please enter 1-9:"
 input = gets.strip
 input_to_index(input)
 
-xo = current_player(board)
+current_player
 
 if valid_move? == true
 
