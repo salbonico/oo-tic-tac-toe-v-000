@@ -123,4 +123,17 @@ def turn_count
   return nil
   end
 
+  def play
+  until over?
+    turn
+    end
+    if won?(board) == true
+      winner = winner(board)
+      puts "Congratulations #{winner}!"
+    elsif draw?(board) == true
+      puts "Cat's Game!"
+  end
+  end
+
+
 end
