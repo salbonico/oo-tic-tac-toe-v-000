@@ -91,7 +91,27 @@ def turn_count
   return true
   end
 
+  def draw?
+  if full? == true && won? == false
+  return true
+  else
+  return false
+  end
+  end
 
+
+
+  def over?(board)
+
+  if draw?(board) == true || won?(board) == true
+
+  return true
+
+  else return false
+
+  end
+
+  end
 
 
 
