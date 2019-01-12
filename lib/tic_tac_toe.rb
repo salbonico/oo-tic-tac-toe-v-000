@@ -37,6 +37,18 @@ def position_taken?
 !(@board[@index].nil? || @board[@index] == " ")
 end
 
+def valid_move?
 
+if @index <0 || @index >8
+
+return false
+
+elsif
+@board[@index] == " "
+
+return true
+else return false
+end
+end
 
 end
