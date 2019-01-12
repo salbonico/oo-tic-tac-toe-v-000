@@ -39,7 +39,26 @@ else return false
 end
 end
 
+def turn
 
+puts "Please enter 1-9:"
+
+input = gets.strip
+input_to_index(input)
+
+xo = current_player(board)
+
+if valid_move? == true
+
+move(xo)
+
+
+
+else turn(board)
+
+end
+
+end
 
 
 
