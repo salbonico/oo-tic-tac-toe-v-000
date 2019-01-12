@@ -127,7 +127,7 @@ def turn_count
   until over?
     turn
     end
-    if won?(board) == true
+    if won? == true
       gwinner = winner
       puts "Congratulations #{gwinner}!"
     elsif draw? == true
