@@ -82,7 +82,14 @@ def turn_count
   return false
   end
 
-
+  def full?
+  @board.each do |number|
+  if number == nil or number == " "
+  return false
+  end
+  end
+  return true
+  end
 
 
 end
